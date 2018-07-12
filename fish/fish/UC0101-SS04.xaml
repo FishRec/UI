@@ -1,0 +1,19 @@
+﻿<Page x:Class="fish.UC0101_SS04"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:fish"
+      mc:Ignorable="d" 
+      d:DesignHeight="683" d:DesignWidth="793"
+      Title="UC0101_SS04"
+      Background="White">
+
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="336,234,0,0" TextWrapping="Wrap" Text="帳號或密碼錯誤 !" VerticalAlignment="Top" FontSize="18"/>
+        <Button x:Name="update" Content="資 料 更 新" HorizontalAlignment="Left" Margin="437,393,0,0" VerticalAlignment="Top" Width="147" Height="37" FontSize="18" Background="DimGray" Foreground="White" Click="Update_click"/>
+        <Button x:Name="reinput" Content="重 新 輸 入" HorizontalAlignment="Left" Margin="235,393,0,0" VerticalAlignment="Top" Width="147" Height="37" FontSize="18" Background="DimGray" Foreground="White" Click="reinput_click"/>
+        <Frame x:Name="UC0101_4" HorizontalAlignment="Left" Height="683" VerticalAlignment="Top" Width="793" NavigationUIVisibility="Hidden"/>
+
+    </Grid>
+</Page>

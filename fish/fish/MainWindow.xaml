@@ -1,0 +1,28 @@
+﻿<Window x:Class="fish.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:fish"
+        mc:Ignorable="d"
+        Title="海洋大數據平台海上智能系統" Height="800" Width="800" WindowStyle="ThreeDBorderWindow" ResizeMode="NoResize">
+    <Grid HorizontalAlignment="Center">
+        <Grid HorizontalAlignment="Right" Height="88" VerticalAlignment="Top" Width="793" Margin="-100,0,-99,0">
+            <Canvas HorizontalAlignment="Left" Height="88" VerticalAlignment="Top" Width="793" Background="#FF77AEDF" Grid.RowSpan="2" >
+                <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="海洋大數據平台海上智能系統" Canvas.Top="21" Height="49" Width="793" FontSize="36" TextAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+            </Canvas>
+        </Grid>
+        <Grid Height="683" Margin="-100,88,-99,0" VerticalAlignment="Top" Grid.RowSpan="2">
+            <!--<TextBlock x:Name="hometxt"  HorizontalAlignment="Left" Margin="55,18,0,0" TextWrapping="Wrap" Text="首頁" VerticalAlignment="Top" FontSize="16"/>
+            <Image x:Name="homeim" Source="D:\C++\fish\fish\home.JPG" HorizontalAlignment="Left" Height="27" Margin="15,11,0,0" VerticalAlignment="Top" Width="33" Stretch="UniformToFill"/>
+            <TextBlock x:Name="logouttxt" HorizontalAlignment="Left" Margin="734,18,0,0" TextWrapping="Wrap" Text="登出" VerticalAlignment="Top" FontSize="16"/>
+            <Image x:Name="logoutim" Source="D:/C++/fish/fish/logout.JPG" HorizontalAlignment="Left" Height="33" Margin="699,11,0,0" VerticalAlignment="Top" Width="33" Stretch="UniformToFill"/>
+            <Image x:Name="seaviewim" Source="D:/C++/fish/fish/seaview.JPG" Height="137" Margin="103,233,0,0" Width="137" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="Search_sea_temperature" Stretch="UniformToFill"/>
+            <TextBlock x:Name="seadegreetxt" HorizontalAlignment="Left" Margin="117,375,0,0" TextWrapping="Wrap" Text="海象紀錄查詢" VerticalAlignment="Top" FontSize="18"/>-->
+            <Frame x:Name="home" HorizontalAlignment="Left" Height="683" VerticalAlignment="Top" Width="793" NavigationUIVisibility="Hidden"/>
+        </Grid>
+
+    </Grid>
+
+
+</Window>

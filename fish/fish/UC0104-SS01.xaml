@@ -1,0 +1,44 @@
+﻿<Page x:Class="fish.UC0104_SS01"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:fish"
+      mc:Ignorable="d" 
+      d:DesignHeight="683" d:DesignWidth="793"
+      Title="UC0104_SS01"
+      Background="White" >
+
+    <Grid>
+        <TextBlock x:Name="hometxt"  HorizontalAlignment="Left" Margin="55,18,0,0" TextWrapping="Wrap" Text="首頁" VerticalAlignment="Top" FontSize="16" MouseLeftButtonDown="gotoHome"/>
+        <TextBlock x:Name="txt"  HorizontalAlignment="Left" Margin="87,18,0,0" TextWrapping="Wrap" Text=" &gt; 附近魚種辨識查詢" VerticalAlignment="Top" FontSize="16"/>
+        <Image x:Name="homeim" Source="ab2.png" HorizontalAlignment="Left" Height="27" Margin="15,11,0,0" VerticalAlignment="Top" Width="33" Stretch="UniformToFill" MouseLeftButtonDown="gotoHome"/>
+        <TextBlock x:Name="logouttxt" HorizontalAlignment="Left" Margin="734,18,0,0" TextWrapping="Wrap" Text="登出" VerticalAlignment="Top" FontSize="16"/>
+        <Image x:Name="logoutim" Source="ab5.png" HorizontalAlignment="Left" Height="33" Margin="697,11,0,0" VerticalAlignment="Top" Width="33" Stretch="UniformToFill"/>
+
+        <TextBlock x:Name="time" HorizontalAlignment="Left" Margin="158,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18">
+			<Run Text="1. 經緯度資訊"/>
+			<Run Text="*" Foreground="Red"/>
+        </TextBlock>
+        <TextBlock x:Name="type" HorizontalAlignment="Left" Margin="158,342,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" FontSize="18">
+			<Run Text="2. 請輸入集魚燈型號"/>
+        </TextBlock>
+        <TextBlock x:Name="datee" HorizontalAlignment="Left" Margin="158,406,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" FontSize="18">
+			<Run Text="3. 時間資訊"/>
+        </TextBlock>
+        <Button x:Name="search" Content="查 詢" HorizontalAlignment="Left" Margin="336,489,0,0" VerticalAlignment="Top" Width="147" Height="37" FontSize="18" Background="DimGray" Foreground="White" Click="type_search"/>
+        <TextBlock x:Name="warn" HorizontalAlignment="Left" Margin="601,487,0,0" TextWrapping="Wrap" Text="*為必填資訊" VerticalAlignment="Top" FontSize="16" Foreground="Red"/>
+        <ComboBox x:Name="date" HorizontalAlignment="Left" Margin="345,406,0,0" VerticalAlignment="Top" Width="77" Height="23" FontSize="16"/>
+        <ComboBox x:Name="month" HorizontalAlignment="Left" Margin="446,406,0,0" VerticalAlignment="Top" Width="77" Height="23" FontSize="16"/>
+        <ComboBox x:Name="year" HorizontalAlignment="Left" Margin="547,406,0,0" VerticalAlignment="Top" Width="77" Height="23" FontSize="16"/>
+        <CheckBox x:Name="table" Content=" 概率表" HorizontalAlignment="Left" Margin="374,279,0,0" VerticalAlignment="Top" FontSize="18" Click="table_click"/>
+        <CheckBox x:Name="history" Content=" 歷史紀錄" HorizontalAlignment="Left" Margin="526,280,0,0" VerticalAlignment="Top" FontSize="18" Click="history_click"/>
+
+        <TextBox x:Name="latit" HorizontalAlignment="Left" Height="43" Margin="344,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" FontSize="16" MouseEnter="Lati_enter" MouseLeave="Lati_leave" Foreground="Silver" PreviewMouseLeftButtonDown="Lati_down" PreviewTextInput="Lati_down"/>
+        <TextBox x:Name="longtit" HorizontalAlignment="Left" Height="43" Margin="344,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" FontSize="16" MouseEnter="Long_enter" MouseLeave="Long_leave" Foreground="Silver" PreviewMouseLeftButtonDown="Long_down" PreviewTextInput="Long_down"/>
+        <ComboBox x:Name="lati" HorizontalAlignment="Left" Margin="546,157,0,0" VerticalAlignment="Top" Width="77" Height="23" FontSize="16"/>
+        <ComboBox x:Name="long" HorizontalAlignment="Left" Margin="546,215,0,0" VerticalAlignment="Top" Width="77" Height="23" FontSize="16"/>
+        <ComboBox x:Name="LEDid" HorizontalAlignment="Left" Margin="344,336,0,0" VerticalAlignment="Top" Width="279" Height="29"/>
+        <Frame x:Name="UC0104_1" HorizontalAlignment="Left" Height="683" VerticalAlignment="Top" Width="793" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Page>

@@ -1,0 +1,32 @@
+﻿<Page x:Class="fish.UC0103_SS01"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:fish"
+      mc:Ignorable="d" 
+      d:DesignHeight="683" d:DesignWidth="793"
+      Title="UC0103_SS01"
+      Background="White" >
+
+    <Grid>
+        <TextBlock x:Name="hometxt"  HorizontalAlignment="Left" Margin="55,18,0,0" TextWrapping="Wrap" Text="首頁" VerticalAlignment="Top" FontSize="16" MouseLeftButtonDown="gotoHome"/>
+        <TextBlock x:Name="txt"  HorizontalAlignment="Left" Margin="87,18,0,0" TextWrapping="Wrap" Text=" &gt; 附近漁獲等級查詢" VerticalAlignment="Top" FontSize="16"/>
+        <Image x:Name="homeim" Source="ab2.png" HorizontalAlignment="Left" Height="27" Margin="15,11,0,0" VerticalAlignment="Top" Width="33" Stretch="UniformToFill" MouseLeftButtonDown="gotoHome"/>
+        <TextBlock x:Name="logouttxt" HorizontalAlignment="Left" Margin="734,18,0,0" TextWrapping="Wrap" Text="登出" VerticalAlignment="Top" FontSize="16"/>
+        <Image x:Name="logoutim" Source="ab5.png" HorizontalAlignment="Left" Height="33" Margin="697,11,0,0" VerticalAlignment="Top" Width="33" Stretch="UniformToFill"/>
+        <TextBlock x:Name="select" HorizontalAlignment="Left" Margin="192,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18">
+			<Run Text="選擇照片"/>
+			<Run Text="*" Foreground="Red"/>
+        </TextBlock>
+        <CheckBox x:Name="now" Content=" 當日魚獲等級" HorizontalAlignment="Left" Margin="336,285,0,0" VerticalAlignment="Top" FontSize="18" Click="now_click"/>
+        <CheckBox x:Name="five" Content=" 五天內之報表" HorizontalAlignment="Left" Margin="336,361,0,0" VerticalAlignment="Top" FontSize="18" Click="five_click"/>
+        <TextBlock x:Name="warn" HorizontalAlignment="Left" Margin="587,454,0,0" TextWrapping="Wrap" Text="*為必填資訊" VerticalAlignment="Top" FontSize="16" Foreground="Red"/>
+        <Button x:Name="search" Content="查 詢" HorizontalAlignment="Left" Margin="322,456,0,0" VerticalAlignment="Top" Width="147" Height="37" FontSize="18" Background="DimGray" Foreground="White" Click="static_search"/>
+        <Button x:Name="staticselect" Content="選 擇 照 片" HorizontalAlignment="Left" Margin="527,185,0,0" VerticalAlignment="Top" Width="114" Height="37" FontSize="18" Background="DimGray" Foreground="White" Click="static_select"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="37" Margin="304,185,0,0" Stroke="Black" VerticalAlignment="Top" Width="193"/>
+        <TextBlock x:Name="filenameT" HorizontalAlignment="Left" Margin="312,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="176" FontSize="18"/>
+
+        <Frame x:Name="UC0103_1" HorizontalAlignment="Left" Height="683" VerticalAlignment="Top" Width="793" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Page>
